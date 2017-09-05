@@ -1,4 +1,4 @@
-I went to school for Graphic Design, learning fomr HTML and CSS along the way. I been working as a Graphic Designer since graduation but have been slowly teaching myself coding.
+I went to school for Graphic Design, learning HTML and CSS along the way. I been working as a Graphic Designer since graduation but have been slowly teaching myself coding.
 
 I have given myself projects over the years to learn actionscript, java, and C. Most recently I have been creating my own game using Unity and C#. I enjoy Graphic Design but I feel that my mind is better suited for coding and I have grown to love it.
 
