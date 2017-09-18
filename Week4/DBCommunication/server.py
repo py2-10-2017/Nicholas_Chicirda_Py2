@@ -1,7 +1,15 @@
 from flask import Flask, request, redirect, render_template, session, flash
-from mysqlconnection import MySQLConnector
 app = Flask(__name__)
-mysql = MySQLConnector(app,'friendsdb')
+app.secret_key = 'ThisIsSecret'
+EMAIL_REGEX = re.compile(r'^[a-zA-Z0-9\.\+_-]+@[a-zA-Z0-9\._-]+\.[a-zA-Z]*$')
+
+from mysqlconnection import MySQLConnector
+mysql = MySQLConnector(app,'mydb')
+
+from flask_bcrypt import Bcrypt
+bcrypt = Bcrypt(app)
+
+
 @app.route('/')
 def index():
     friends = mysql.query_db("SELECT * FROM friends")
